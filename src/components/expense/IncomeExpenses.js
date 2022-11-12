@@ -1,11 +1,11 @@
 import React, { useContext } from 'react';
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '../../context/GlobalState';
 
 //Money formatter function
 function moneyFormatter(num) {
   let p = num.toFixed(2).split('.');
   return (
-    '$ ' +
+    '₹' +
     p[0]
       .split('')
       .reverse()

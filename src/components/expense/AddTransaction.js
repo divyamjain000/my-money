@@ -1,5 +1,5 @@
 import React, {useState, useContext} from 'react'
-import { GlobalContext } from '../context/GlobalState';
+import { GlobalContext } from '../../context/GlobalState';
 
 export default function AddTransaction(){
   const [text, setText] = useState('');
@@ -21,7 +21,8 @@ export default function AddTransaction(){
 
   return (
     <>
-    
+
+
       <h3>Add new transaction</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
